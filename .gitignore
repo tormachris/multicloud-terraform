@@ -1,5 +1,4 @@
-creds.txt
+creds.sh
 .terraform
-*.tfstate
-*.info
-*.backup
+terraform.tfstate*
+*.log
