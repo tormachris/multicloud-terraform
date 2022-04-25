@@ -23,6 +23,11 @@ environment:
     from_secret: "ARTIFACTORY_URL"
 
 steps:
+- name: Initialite Terraform resources
+  image: hashicorp/terraform
+  commands:
+  - terraform init
+
 - name: Validate Terraform configuration
   image: hashicorp/terraform
   commands:
