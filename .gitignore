@@ -1,0 +1,5 @@
+creds.txt
+.terraform
+*.tfstate
+*.info
+*.backup
