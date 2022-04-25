@@ -3,7 +3,7 @@ resource "cloudflare_zone" "tormakristofeu" {
 }
 
 resource "cloudflare_zone_dnssec" "tormakristofeu" {
-    zone_id = cloudflare_zone.tormakristofeu.id
+  zone_id = cloudflare_zone.tormakristofeu.id
 }
 
 resource "cloudflare_zone" "tormakrisdev" {
@@ -11,7 +11,7 @@ resource "cloudflare_zone" "tormakrisdev" {
 }
 
 resource "cloudflare_zone_dnssec" "tormakrisdev" {
-    zone_id = cloudflare_zone.tormakrisdev.id
+  zone_id = cloudflare_zone.tormakrisdev.id
 }
 
 resource "cloudflare_zone" "tormaxyz" {
@@ -19,7 +19,7 @@ resource "cloudflare_zone" "tormaxyz" {
 }
 
 resource "cloudflare_zone_dnssec" "tormaxyz" {
-    zone_id = cloudflare_zone.tormaxyz.id
+  zone_id = cloudflare_zone.tormaxyz.id
 }
 
 resource "cloudflare_zone" "kmlabzcom" {
@@ -27,7 +27,7 @@ resource "cloudflare_zone" "kmlabzcom" {
 }
 
 resource "cloudflare_zone_dnssec" "kmlabzcom" {
-    zone_id = cloudflare_zone.kmlabzcom.id
+  zone_id = cloudflare_zone.kmlabzcom.id
 }
 
 resource "cloudflare_zone" "csekventillatorokcom" {
@@ -35,5 +35,5 @@ resource "cloudflare_zone" "csekventillatorokcom" {
 }
 
 resource "cloudflare_zone_dnssec" "csekventillatorokcom" {
-    zone_id = cloudflare_zone.csekventillatorokcom.id
+  zone_id = cloudflare_zone.csekventillatorokcom.id
 }

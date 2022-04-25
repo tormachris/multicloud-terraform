@@ -3,11 +3,6 @@ type: docker
 name: Apply Cloud infra changes
 
 steps:
-- name: Validate Terraform configuration
-  image: hashicorp/terraform
-  commands:
-  - terraform validate
-
 - name: Apply changes
   environment:
     ARM_CLIENT_ID:
@@ -31,5 +26,6 @@ steps:
   image: hashicorp/terraform
   commands:
   - terraform init
+  - terraform validate
   - terraform plan
   - terraform apply -auto-approve

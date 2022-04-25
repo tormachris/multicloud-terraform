@@ -1,7 +1,7 @@
 terraform {
-    backend "artifactory" {
-    repo     = "terraform"
-    subpath  = "terraform-state"
+  backend "artifactory" {
+    repo    = "terraform"
+    subpath = "terraform-state"
   }
   required_providers {
     azurerm = {
