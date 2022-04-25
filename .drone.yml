@@ -3,7 +3,7 @@ type: docker
 name: Apply Cloud infra changes
 
 steps:
-- name: Apply changes
+- name: Apply changes via Terraform
   environment:
     ARM_CLIENT_ID:
      from_secret: ARM_CLIENT_ID
