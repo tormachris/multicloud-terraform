@@ -28,3 +28,8 @@ resource "azurerm_static_site" "cv" {
   location            = "westeurope"
 }
 
+resource "azurerm_static_site_custom_domain" "cvtormakristofeu" {
+  static_site_id  = azurerm_static_site.cv.id
+  domain_name     = "cv.tormakristof.eu"
+  validation_type = "cname-delegation"
+}
