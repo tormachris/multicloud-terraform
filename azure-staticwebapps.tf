@@ -21,3 +21,15 @@ resource "azurerm_static_site_custom_domain" "wwwtormakristofeu" {
   domain_name     = "www.tormakristof.eu"
   validation_type = "cname-delegation"
 }
+
+resource "azurerm_static_site" "cv" {
+  name                = "cv"
+  resource_group_name = "rg-cv-staticwebapp"
+  location            = "westeurope"
+}
+
+resource "azurerm_static_site_custom_domain" "cvtormakristofeu" {
+  static_site_id  = azurerm_static_site.cv.id
+  domain_name     = "cv.tormakristof.eu"
+  validation_type = "cname-delegation"
+}
