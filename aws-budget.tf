@@ -2,7 +2,7 @@ resource "aws_budgets_budget" "aws-budget" {
   name              = "budget-monthly"
   budget_type       = "COST"
   limit_amount      = "5"
-  limit_unit        = "EUR"
+  limit_unit        = "USD"
   time_unit         = "MONTHLY"
 
   notification {
