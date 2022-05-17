@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "sa-hanyadikhet-functionapp" {
-  name                     = "sa-hanyadikhet-functionapp"
+  name                     = "sahanyadikhetfunctionapp"
   resource_group_name      = azurerm_resource_group.rg-hanyadikhet-functionapp.name
   location                 = azurerm_resource_group.rg-hanyadikhet-functionapp.location
   account_tier             = "Standard"
