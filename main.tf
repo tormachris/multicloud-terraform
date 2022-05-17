@@ -13,6 +13,11 @@ terraform {
       source  = "cloudflare/cloudflare"
       version = "~> 3.0"
     }
+
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.27"
+    }
   }
 
 }
@@ -22,4 +27,9 @@ provider "azurerm" {
 }
 
 provider "cloudflare" {
+}
+
+provider "aws" {
+  profile = "default"
+  region  = "eu-central-2"
 }
