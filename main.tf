@@ -31,5 +31,5 @@ provider "cloudflare" {
 
 provider "aws" {
   profile = "default"
-  region  = "eu-central-2"
+  region  = "eu-central-1"
 }
