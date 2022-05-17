@@ -23,6 +23,12 @@ steps:
       from_secret: ARTIFACTORY_PASSWORD
     ARTIFACTORY_URL:
       from_secret: ARTIFACTORY_URL
+    AWS_ACCESS_KEY_ID:
+      from_secret: AWS_ACCESS_KEY_ID
+    AWS_SECRET_ACCESS_KEY:
+      from_secret: AWS_SECRET_ACCESS_KEY
+    AWS_DEFAULT_REGION:
+      from_secret: AWS_DEFAULT_REGION
   image: hashicorp/terraform
   commands:
   - terraform init
