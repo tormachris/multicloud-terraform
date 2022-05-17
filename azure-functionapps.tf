@@ -11,7 +11,7 @@ resource "azurerm_service_plan" "sp-hanyadikhet-functionapp" {
   resource_group_name = azurerm_resource_group.rg-hanyadikhet-functionapp.name
   location            = azurerm_resource_group.rg-hanyadikhet-functionapp.location
   os_type             = "Linux"
-  sku_name            = "FREE"
+  sku_name            = "Y1"
 }
 
 resource "azurerm_linux_function_app" "fa-hanyadikhet" {
