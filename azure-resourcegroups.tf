@@ -12,8 +12,3 @@ resource "azurerm_resource_group" "rg-cv-staticwebapp" {
   name     = "rg-cv-staticwebapp"
   location = "westeurope"
 }
-
-resource "azurerm_resource_group" "rg-subscription-budget" {
-  name     = "rg-subscription-budget"
-  location = "westeurope"
-}
