@@ -1,6 +1,6 @@
 resource "azurerm_static_site" "tormakristofeu" {
   name                = "tormakristofeu"
-  resource_group_name = "rg-static-site"
+  resource_group_name = azurerm_resource_group.rg-static-site.name
   location            = "westeurope"
 }
 
@@ -12,7 +12,7 @@ resource "azurerm_static_site_custom_domain" "statictormakristofeu" {
 
 resource "azurerm_static_site" "personal-site" {
   name                = "personal-site"
-  resource_group_name = "rg-personalsite-staticwebapp"
+  resource_group_name = azurerm_resource_group.rg-personalsite-staticwebapp.name
   location            = "westeurope"
 }
 
@@ -24,7 +24,7 @@ resource "azurerm_static_site_custom_domain" "wwwtormakristofeu" {
 
 resource "azurerm_static_site" "cv" {
   name                = "cv"
-  resource_group_name = "rg-cv-staticwebapp"
+  resource_group_name = azurerm_resource_group.rg-cv-staticwebapp.name
   location            = "westeurope"
 }
 
