@@ -26,6 +26,8 @@ resource "azurerm_linux_function_app" "fa-hanyadikhet" {
     FUNCTIONS_WORKER_RUNTIME = "python"
   }
 
+  https_only = true
+
   site_config {
     application_stack {
       python_version = "3.9"
