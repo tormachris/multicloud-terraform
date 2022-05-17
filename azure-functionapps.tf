@@ -22,7 +22,9 @@ resource "azurerm_linux_function_app" "fa-hanyadikhet" {
   storage_account_name = azurerm_storage_account.sa-hanyadikhet-functionapp.name
   service_plan_id      = azurerm_service_plan.sp-hanyadikhet-functionapp.id
 
-  python_version = "3.9"
+  application_stack {
+    python_version = "3.9"
+  }
 
   site_config {}
 }
