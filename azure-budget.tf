@@ -9,7 +9,7 @@ resource "azurerm_consumption_budget_subscription" "subscription-budget" {
 
 
   notification {
-    enabled        = enabled
+    enabled        = true
     threshold      = 85.0
     operator       = "GreaterThan"
     threshold_type = "Forecasted"
