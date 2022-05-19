@@ -35,7 +35,7 @@ resource "azurerm_static_site_custom_domain" "cvtormakristofeu" {
 }
 
 resource "azurerm_static_site" "landingpage" {
-  name                = "cv"
+  name                = "landingpage"
   resource_group_name = azurerm_resource_group.rg-landingpage-staticwebapp.name
   location            = azurerm_resource_group.rg-landingpage-staticwebapp.location
 }
