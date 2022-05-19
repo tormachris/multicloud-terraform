@@ -17,3 +17,8 @@ resource "azurerm_resource_group" "rg-hanyadikhet-functionapp" {
   name     = "rg-hanyadikhet-functionapp"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rg-landingpage-staticwebapp" {
+  name     = "rg-landingpage-staticwebapp"
+  location = "westeurope"
+}

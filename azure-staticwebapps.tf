@@ -16,9 +16,9 @@ resource "azurerm_static_site" "personal-site" {
   location            = azurerm_resource_group.rg-personalsite-staticwebapp.location
 }
 
-resource "azurerm_static_site_custom_domain" "wwwtormakristofeu" {
+resource "azurerm_static_site_custom_domain" "blogtormakristofeu" {
   static_site_id  = azurerm_static_site.personal-site.id
-  domain_name     = "www.tormakristof.eu"
+  domain_name     = "blog.tormakristof.eu"
   validation_type = "cname-delegation"
 }
 
@@ -31,5 +31,17 @@ resource "azurerm_static_site" "cv" {
 resource "azurerm_static_site_custom_domain" "cvtormakristofeu" {
   static_site_id  = azurerm_static_site.cv.id
   domain_name     = "cv.tormakristof.eu"
+  validation_type = "cname-delegation"
+}
+
+resource "azurerm_static_site" "landingpage" {
+  name                = "cv"
+  resource_group_name = azurerm_resource_group.rg-landingpage-staticwebapp.name
+  location            = azurerm_resource_group.rg-landingpage-staticwebapp.location
+}
+
+resource "azurerm_static_site_custom_domain" "wwwtormakristofeu" {
+  static_site_id  = azurerm_static_site.landingpage.id
+  domain_name     = "www.tormakristof.eu"
   validation_type = "cname-delegation"
 }
