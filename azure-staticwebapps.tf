@@ -57,3 +57,15 @@ resource "azurerm_static_site_custom_domain" "wwwkmlabzcom" {
   domain_name     = "www.kmlabz.com"
   validation_type = "cname-delegation"
 }
+
+resource "azurerm_static_site" "hhv" {
+  name                = "hhv"
+  resource_group_name = azurerm_resource_group.rg-hhv-staticwebapp.name
+  location            = azurerm_resource_group.rg-hhv-staticwebapp.location
+}
+
+resource "azurerm_static_site_custom_domain" "hhvtormakristofeu" {
+  static_site_id  = azurerm_static_site.hhv.id
+  domain_name     = "hhv.tormakristof.eu"
+  validation_type = "cname-delegation"
+}

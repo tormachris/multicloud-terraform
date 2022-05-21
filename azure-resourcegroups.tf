@@ -27,3 +27,8 @@ resource "azurerm_resource_group" "rg-kmlabz-staticwebapp" {
   name     = "rg-kmlabz-staticwebapp"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rg-hhv-staticwebapp" {
+  name     = "rg-kmlabz-staticwebapp"
+  location = "westeurope"
+}
