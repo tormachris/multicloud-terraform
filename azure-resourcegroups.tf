@@ -22,3 +22,8 @@ resource "azurerm_resource_group" "rg-landingpage-staticwebapp" {
   name     = "rg-landingpage-staticwebapp"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rg-kmlabz-staticwebapp" {
+  name     = "rg-kmlabz-staticwebapp"
+  location = "westeurope"
+}
