@@ -1,10 +1,3 @@
-resource "cloudflare_record" "webgatewaytormakristofeu" {
-  domain  = cloudflare_zone.tormakristofeu.zone
-  name    = "webgateway"
-  value   = "152.66.211.211"
-  type    = "A"
-  proxied = false
-}
 resource "cloudflare_record" "mckaytormakristofeu" {
   domain  = cloudflare_zone.tormakristofeu.zone
   name    = "mckay"
@@ -69,13 +62,6 @@ resource "cloudflare_record" "mailtormakristofeu" {
   proxied = false
 }
 
-resource "cloudflare_record" "webgatewaytormakristofeu6" {
-  domain  = cloudflare_zone.tormakristofeu.zone
-  name    = "webgateway"
-  value   = "2001:738:2001:207f:0:211:211:15"
-  type    = "AAAA"
-  proxied = false
-}
 resource "cloudflare_record" "mckaytormakristofeu6" {
   domain  = cloudflare_zone.tormakristofeu.zone
   name    = "mckay"
@@ -203,10 +189,10 @@ resource "cloudflare_record" "blogtormakristofeu" {
   type    = "CNAME"
   proxied = false
 }
-resource "cloudflare_record" "blogtormakristofeu" {
+resource "cloudflare_record" "statictormakristofeu" {
   domain  = cloudflare_zone.tormakristofeu.zone
-  name    = "blog"
-  value   = "brave-mushroom-038a3c503.1.azurestaticapps.net"
+  name    = "static"
+  value   = "icy-island-08b7c5a03.1.azurestaticapps.net"
   type    = "CNAME"
   proxied = false
 }
