@@ -13,7 +13,7 @@ resource "cloudflare_record" "onieltormakristofeu" {
   proxied = false
 }
 resource "cloudflare_record" "webgatewaytormakristofeu" {
-  domain  = cloudflare_zone.tormakristofeu.zone
+  zone_id =   = cloudflare_zone.tormakristofeu.id
   name    = "webgateway"
   value   = "152.66.211.211"
   type    = "A"
