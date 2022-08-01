@@ -32,3 +32,8 @@ resource "azurerm_resource_group" "rg-hhv-staticwebapp" {
   name     = "rg-hhv-staticwebapp"
   location = "westeurope"
 }
+
+resource "azurerm_resource_group" "rg-cosmostest-staticwebapp-cosmosdb" {
+  name     = "rg-cosmostest-staticwebapp-cosmosdb"
+  location = "westeurope"
+}
