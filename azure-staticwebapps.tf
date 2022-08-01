@@ -72,8 +72,8 @@ resource "azurerm_static_site_custom_domain" "hhvtormakristofeu" {
 
 resource "azurerm_static_site" "cosmostest" {
   name                = "cosmostest"
-  resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.name
-  location            = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.location
+  resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp.name
+  location            = azurerm_resource_group.rg-cosmostest-staticwebapp.location
 }
 
 resource "azurerm_static_site_custom_domain" "cosmostesttormakristofeu" {

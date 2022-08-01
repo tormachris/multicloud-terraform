@@ -33,7 +33,12 @@ resource "azurerm_resource_group" "rg-hhv-staticwebapp" {
   location = "westeurope"
 }
 
-resource "azurerm_resource_group" "rg-cosmostest-staticwebapp-cosmosdb" {
+resource "azurerm_resource_group" "rg-cosmostest-staticwebapp" {
   name     = "rg-cosmostest-staticwebapp-cosmosdb"
+  location = "westeurope"
+}
+
+resource "azurerm_resource_group" "rg-cosmostest-cosmosdb" {
+  name     = "rg-cosmostest-cosmosdb"
   location = "westeurope"
 }
