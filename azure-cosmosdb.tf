@@ -1,6 +1,6 @@
 resource "azurerm_cosmosdb_account" "cosmodb" {
   name = "cosmosdbazurefunction"
-  location = "germanywestcentral"
+  location = "eastus"
   resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.name
   offer_type = "Standard"
   kind = "GlobalDocumentDB"
