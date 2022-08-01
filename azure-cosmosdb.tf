@@ -13,7 +13,7 @@ resource "azurerm_cosmosdb_account" "cosmodb" {
   }
 
   geo_location {
-    location          = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.location
+    location          = azurerm_resource_group.rg-cosmostest-cosmosdb.location
     failover_priority = 0
   }
 }
