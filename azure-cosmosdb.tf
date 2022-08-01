@@ -1,5 +1,5 @@
 resource "azurerm_cosmosdb_account" "cosmodb" {
-  name = "cosmosdb"
+  name = "cosmosdbazurefunction"
   location = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.location
   resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.name
   offer_type = "Standard"
