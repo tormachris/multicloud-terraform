@@ -1,7 +1,7 @@
 resource "azurerm_cosmosdb_account" "cosmodb" {
   name = "cosmosdb"
   location = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.location
-  resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp.name
+  resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp-cosmosdb.name
   offer_type = "Standard"
   kind = "GlobalDocumentDB"
   enable_free_tier = true
