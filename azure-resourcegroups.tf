@@ -40,5 +40,5 @@ resource "azurerm_resource_group" "rg-cosmostest-staticwebapp" {
 
 resource "azurerm_resource_group" "rg-cosmostest-cosmosdb" {
   name     = "rg-cosmostest-cosmosdb"
-  location = "westeurope"
+  location = "northeurope"
 }
