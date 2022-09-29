@@ -33,7 +33,6 @@ steps:
   commands:
   - terraform init
   - terraform validate
-  - terraform import "azurerm_resource_group.rg-cosmostest-cosmosdb" "/subscriptions/1f0aad73-a560-419a-a3a1-e30d0dec98b3/resourceGroups/rg-cosmostest-cosmosdb"
   - terraform import "azurerm_cosmosdb_account.cosmodb" "/subscriptions/1f0aad73-a560-419a-a3a1-e30d0dec98b3/resourceGroups/rg-cosmostest-cosmosdb/providers/Microsoft.DocumentDB/databaseAccounts/cosmosdbtorma"
   - terraform plan
   - terraform apply -auto-approve
