@@ -40,5 +40,9 @@ resource "azurerm_resource_group" "rg-cosmostest-staticwebapp" {
 
 resource "azurerm_resource_group" "rg-cosmostest-cosmosdb" {
   name     = "rg-cosmostest-cosmosdb"
-  location = "northeurope"
+  location = "westeurope"
+}
+resource "azurerm_resource_group" "rg-hanyadikhet-functionapp" {
+  name     = "rg-hanyadikhet-functionapp"
+  location = "westeurope"
 }

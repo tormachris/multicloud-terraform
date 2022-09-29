@@ -1,5 +1,5 @@
 resource "azurerm_cosmosdb_account" "cosmodb" {
-  name = "cosmosdbazurefunction"
+  name = "cosmosdbtorma"
   location = azurerm_resource_group.rg-cosmostest-cosmosdb.location
   resource_group_name = azurerm_resource_group.rg-cosmostest-cosmosdb.name
   offer_type = "Standard"
