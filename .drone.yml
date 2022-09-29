@@ -29,7 +29,7 @@ steps:
       from_secret: AWS_SECRET_ACCESS_KEY
     AWS_DEFAULT_REGION:
       from_secret: AWS_DEFAULT_REGION
-  image: hashicorp/terraform
+  image: hashicorp/terraform:1.2.9
   commands:
   - terraform init
   - terraform validate
