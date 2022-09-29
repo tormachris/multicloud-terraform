@@ -7,9 +7,9 @@ resource "azurerm_cosmosdb_account" "cosmodb" {
   enable_free_tier = true
 
   consistency_policy {
-    consistency_level       = "BoundedStaleness"
-    max_interval_in_seconds = 300
-    max_staleness_prefix    = 100000
+    consistency_level       = "Session"
+    max_interval_in_seconds = 5
+    max_staleness_prefix    = 100
   }
 
   geo_location {
