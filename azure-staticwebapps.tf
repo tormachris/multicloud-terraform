@@ -69,15 +69,3 @@ resource "azurerm_static_site_custom_domain" "hhvtormakristofeu" {
   domain_name     = "hhv.tormakristof.eu"
   validation_type = "cname-delegation"
 }
-
-resource "azurerm_static_site" "cosmostest" {
-  name                = "cosmostest"
-  resource_group_name = azurerm_resource_group.rg-cosmostest-staticwebapp.name
-  location            = azurerm_resource_group.rg-cosmostest-staticwebapp.location
-}
-
-resource "azurerm_static_site_custom_domain" "cosmostesttormakristofeu" {
-  static_site_id  = azurerm_static_site.cosmostest.id
-  domain_name     = "cosmostest.tormakristof.eu"
-  validation_type = "cname-delegation"
-}
